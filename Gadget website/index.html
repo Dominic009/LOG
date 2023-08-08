@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Rubik:wght@300;500&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto:wght@100;400&family=Rubik:wght@300;500&display=swap"
+        rel="stylesheet">
+    <title>Digital World</title>
+</head>
+
+<body>
+    <section id="banner">
+        <img src="/pngegg.png" class="logo">
+        <div class="banner-text">
+            <h1> Innocent Store </h1>
+            <p>Explore Yourself With The Technology</p>
+            <div class="banner-btn">
+                <a href="#"><span></span>Find Out</a>
+                <a href="#"><span></span>Read more</a>
+            </div>
+        </div>
+    </section>
+    <div id="sidenav">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Meet us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menubtn">
+        <img src="/pngwing.com.png" id="menu">
+    </div>
+    <!-- Features -->
+    <section id="feature">
+        <div class="title-text">
+            <p>FEATURES</p>
+            <h1>Why Choose Us?</h1>
+        </div>
+    </section>
+    <script>
+        var menubtn = document.getElementById("menubtn")
+        var sidenav = document.getElementById("sidenav")
+        var menu = document.getElementById("menu")
+        sidenav.style.right = "-250px";
+        menubtn.onclick = function () {
+            if (sidenav.style.right == "-250px") {
+                sidenav.style.right = "0"
+                menu.src = "/close.png"
+            }
+            else {
+                sidenav.style.right = "-250px";
+                menu.src = "/pngwing.com.png"
+            }
+        }
+    </script>
+</body>
+
+</html>
